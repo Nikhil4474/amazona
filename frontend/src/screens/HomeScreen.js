@@ -50,7 +50,6 @@ function HomeScreen() {
           products.map((product) => (
             <div className="product" key={product.slug}>
               <Link to={`/product/${product.slug}`}>
-                <p>{product.name}</p>
                 <img src={product.image} alt={product.name} />
               </Link>
               <div className="product-info">
