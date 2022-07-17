@@ -7,6 +7,7 @@ import MessageBox from '../components/MessageBox';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
@@ -16,6 +17,7 @@ export default function CartScreen() {
   const {
     cart: { cartItems },
   } = state;
+
   const updateCartHandler = async (item, quantity) => {
     const { data } = await axios.get(`/api/products/${item._id}`);
     if (data.countInStock < quantity) {
