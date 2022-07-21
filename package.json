@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Nikhil4474/amazona/issues"
   },
-  "homepage": "https://github.com/Nikhil4474/amazona#readme"
+  "homepage": "https://github.com/Nikhil4474/amazona#readme",
+  "dependencies": {
+    "react": "^16.14.0"
+  }
 }
