@@ -114,3 +114,34 @@
 28. Implement Place Order Action
    1. handle place order action
    2. create order create api
+29. Create Order Screen
+   1. Create backend api for order/:id
+   2. fetch order api in frontend
+   3. show order information in 2 columns
+30. Pay Order By PayPal
+   1. generate paypal client id
+   2. create api to return client id
+   3. install react-paypal-js
+   4. use PaypalScriptProvider in index.js
+   5. use usePayPalScriptReducer in Order Screen
+   6. implement loadPayPalScript function
+   7. render paypal button
+   8. implement onApprove payment function
+   9. create pay order api in backend
+31. Display Order History
+   1. create order screen
+   2. create order history api
+   3. create api in the frontend
+32. Create Profile Screen
+   1. get user info from context
+   2. show user information
+   3. create user update api
+   4. update user info
+33. Publish to Heroku
+   1. create and config node project
+   2. serve build folder in frontend folder
+   3. create heroku account
+   4. connect it to github
+   5. create mongodb atlas database
+   6. set database connect in heroku env variables
+   7. Commit and push
