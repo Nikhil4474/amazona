@@ -12,8 +12,8 @@ body {
 main {
   flex: 1;
 }
-.btn-primary {
-  background-color: #f0c040;
+.btn-primary, .btn-outline-primary{
+  background-color: #f9ab37;
   color: #000000;
 }
 .products {
@@ -78,4 +78,7 @@ main {
 }
 .active-nav {
   left: 0;
+}
+.text-bold {
+  font-weight: bold;
 }
