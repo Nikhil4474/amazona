@@ -209,4 +209,25 @@
 49. Delete User
     1. add delete button
     2. handle click action
-    3. implement backen api for delete
+    3. implement backend api for delete
+50. Choose Address on Google Maps
+   1. Create google map credentials
+   2. update .env file with Google Api Key
+   3. create api to send google api to frontend
+   4. create map screen
+   5. fetch google api
+   6. getUserLocation
+   7. Install @react-google-maps/api
+   8. use it in shipping screen
+   9. apply map to the checkout screen
+51. Email order receipt by mailgun
+   1. Create mailgun account
+   2. add and verify your domain to mailgun
+   3. install mailgun-js
+   4. set api key in cnv file
+   5. change pay order in orderRouter
+   6. send email order receipt
+52. Review orders
+   1. Create submit review form
+   2. handle submit
+   3. implement backend api for review
