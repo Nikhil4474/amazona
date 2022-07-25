@@ -44,6 +44,7 @@ productRouter.put(
       product.slug = req.body.slug;
       product.price = req.body.price;
       product.image = req.body.image;
+      product.images = req.body.images;
       product.category = req.body.category;
       product.brand = req.body.brand;
       product.countInStock = req.body.countInStock;
@@ -106,7 +107,6 @@ productRouter.post(
     }
   })
 );
-
 
 const PAGE_SIZE = 3;
 
@@ -217,7 +217,6 @@ productRouter.get(
     res.send(categories);
   })
 );
-
 
 productRouter.get('/slug/:slug', async (req, res) => {
   const product = await Product.findOne({ slug: req.params.slug });
