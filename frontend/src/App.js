@@ -30,7 +30,7 @@ import DashboardScreen from './screens/DashboardScreen.js';
 import AdminRoute from './components/AdminRoute.js';
 import ProductListScreen from './screens/ProductListScreen';
 import ProductEditScreen from './screens/ProductEditScreen';
-import OrderListScreen from './screens/OrderListScreen';
+import OrderListScreen from './screens/OrderListScreen.js';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 
