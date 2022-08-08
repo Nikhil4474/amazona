@@ -33,6 +33,7 @@ import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
+import SupportScreen from './screens/SupportScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -130,6 +131,9 @@ function App() {
                       <LinkContainer to="/admin/users">
                         <NavDropdown.Item>Users</NavDropdown.Item>
                       </LinkContainer>
+                      <LinkContainer to="/admin/support">
+                        <NavDropdown.Item>Support</NavDropdown.Item>
+                      </LinkContainer>
                     </NavDropdown>
                   )}
                 </Nav>
@@ -204,6 +208,14 @@ function App() {
                 element={
                   <AdminRoute>
                     <DashboardScreen />
+                  </AdminRoute>
+                }
+              ></Route>
+              <Route
+                path="/admin/support"
+                element={
+                  <AdminRoute>
+                    <SupportScreen />
                   </AdminRoute>
                 }
               ></Route>
