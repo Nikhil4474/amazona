@@ -235,7 +235,3 @@
    1. add images to product model
    2. get images in edit screen
    3. show images in product screen
-54. Implement Live Chat With Customers
-   1. use socket.io to create backend
-   2. create chat box component
-   3. create support screen
