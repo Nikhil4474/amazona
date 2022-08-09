@@ -72,7 +72,7 @@ userRouter.post(
   expressAsyncHandler(async (req, res) => {
     const user = await User.findOne({ email: req.body.email });
     if (user) {
-      if (bcrypt.compareSync(req.body.password, user.password)) {
+      if (req.body.password === user.password) {
         res.send({
           _id: user._id,
           name: user.name,
@@ -92,7 +92,7 @@ userRouter.post(
     const newUser = new User({
       name: req.body.name,
       email: req.body.email,
-      password: bcrypt.hashSync(req.body.password),
+      password: req.body.password,
     });
     const user = await newUser.save();
     res.send({
